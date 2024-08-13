@@ -5,6 +5,7 @@ ARG UID
 ARG GID
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ Asia/Tokyo
 
 RUN useradd --shell /bin/bash --uid $UID --non-unique --create-home $UNAME
 RUN groupmod --gid $GID --non-unique $UNAME
