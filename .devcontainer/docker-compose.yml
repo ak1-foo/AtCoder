@@ -1,0 +1,10 @@
+services:
+  atcoder-python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        UNAME: atcoder-user
+        UID: $UID
+        GID: $GID
+    tty: true

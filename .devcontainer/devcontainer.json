@@ -1,0 +1,15 @@
+{
+    "name": "atcoder-python",
+    "dockerComposeFile": "docker-compose.yml",
+    "initializeCommand": "/bin/bash .devcontainer/init.sh",
+    "postCreateCommand": "/bin/bash -c 'pip3 install -r requirements.txt'",
+    "service": "atcoder-python",
+    "workspaceFolder": "/workspace",
+    "mounts": [{
+        "type": "bind",
+        "source": "..",
+        "target": "/workspace"
+    }],
+    "shutdownAction": "stopCompose",
+    "remoteUser": "atcoder-user"
+}
