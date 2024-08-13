@@ -24,3 +24,7 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | b
 RUN echo 'export PATH=$HOME/.local/bin:$PATH' >> $HOME/.bashrc && \
     . $HOME/.bashrc
 WORKDIR /workspace
+
+RUN echo 'alias ojt="oj test -c \"python3 ./main.py\" -d ./tests/"' >> $HOME/.bashrc && \
+    echo 'alias accs="acc submit -- ./main.py --language 5055"' >> $HOME/.bashrc && \
+    . $HOME/.bashrc
