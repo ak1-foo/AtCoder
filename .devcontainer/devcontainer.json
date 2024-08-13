@@ -10,6 +10,13 @@
         "source": "..",
         "target": "/workspace"
     }],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    },
     "shutdownAction": "stopCompose",
     "remoteUser": "atcoder-user"
 }
