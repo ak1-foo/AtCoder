@@ -12,7 +12,12 @@ RUN groupmod --gid $GID --non-unique $UNAME
 
 RUN apt update && apt install -y \
     libmpc-dev \
+    expect \
     && apt clean
+
+# set alias
+COPY ./.bashrc.local /workspace/.bashrc.local
+RUN cat /workspace/.bashrc.local >> /etc/bash.bashrc
 
 USER ${UNAME}
 COPY --chown=${UNAME}:${UNAME} ./template.json /workspace/template.json
@@ -29,13 +34,9 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | b
     cp /workspace/template.json $ACC_CONFIG_DIR/py/template.json && \
     cp /workspace/template.py $ACC_CONFIG_DIR/py/main.py && \
     acc config default-template py && \
-    acc config default-task-choice next
+    acc config default-task-choice all
 
 
 RUN echo 'export PATH=$HOME/.local/bin:$PATH' >> $HOME/.bashrc && \
     . $HOME/.bashrc
 WORKDIR /workspace
-
-RUN echo 'alias ojt="oj test -c \"python3 ./main.py\" -d ./tests/"' >> $HOME/.bashrc && \
-    echo 'alias accs="acc submit -- ./main.py --language 5055"' >> $HOME/.bashrc && \
-    . $HOME/.bashrc

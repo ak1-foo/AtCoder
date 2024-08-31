@@ -1,0 +1,61 @@
+acct() {
+    oj test -c \"python3 ./main.py\" -d ./tests/
+}
+
+accs() {
+    acc submit -- ./main.py --language 5055
+}
+
+accsetup() {
+    cd /workspace/contest/
+
+    acc session | grep -q "not login"
+    if [ $? -ne 0 ]; then
+        return
+    fi
+
+
+    read -p "Username: " username
+    read -sp "Password: " password
+    echo -e "\n"
+
+    expect -c "
+        set timeout 5
+        spawn acc login
+        expect \"username:\"
+        send \"${username}\n\"
+        expect \"password:\"
+        send \"${password}\n\"
+        expect \"$ \"
+        exit 0
+    "
+
+    expect -c "
+        set timeout 5
+        spawn oj login https://beta.atcoder.jp/
+        expect \"Username:\"
+        send \"${username}\n\"
+        expect \"Password:\"
+        send \"${password}\n\"
+        expect \"$ \"
+        exit 0
+    "
+
+    unset username
+    unset password
+}
+
+accnew() {
+    cd /workspace/contest/
+    acc new $1
+    cd $1
+    acc add
+}
+
+accsw() {
+    cd ../$1 > /dev/null 2>&1
+    if [ $? -ne 0 ]; then
+        cd ./$1
+    fi
+    code ./main.py
+}
