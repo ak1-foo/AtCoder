@@ -13,6 +13,7 @@ RUN groupmod --gid $GID --non-unique $UNAME
 RUN apt update && apt install -y \
     libmpc-dev \
     expect \
+    less \
     && apt clean
 
 # set alias
