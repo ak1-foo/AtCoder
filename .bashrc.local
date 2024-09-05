@@ -11,6 +11,7 @@ accsetup() {
 
     acc session | grep -q "not login"
     if [ $? -ne 0 ]; then
+        echo "You are already login"
         return
     fi
 
