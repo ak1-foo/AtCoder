@@ -1,5 +1,5 @@
 acct() {
-    oj test -c \"python3 ./main.py\" -d ./tests/
+    oj test -c "python3 ./main.py" -d ./tests/
 }
 
 accs() {
