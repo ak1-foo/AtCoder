@@ -3,7 +3,7 @@ acct() {
 }
 
 accs() {
-    acc submit -- ./main.py --language 5055
+    acc submit ./main.py -- --guess-python-interpreter pypy
 }
 
 accsetup() {
