@@ -29,7 +29,8 @@ accsetup() {
         send \"${password}\n\"
         expect \"$ \"
         exit 0
-    "
+    " &
+    wait
 
     expect -c "
         set timeout 5
