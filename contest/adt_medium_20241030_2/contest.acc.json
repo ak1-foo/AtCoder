@@ -1,0 +1,64 @@
+{
+  "contest": {
+    "id": "adt_medium_20241030_2",
+    "title": "AtCoder Daily Training MEDIUM 2024/10/30 18:00start",
+    "url": "https://atcoder.jp/contests/adt_medium_20241030_2"
+  },
+  "tasks": [
+    {
+      "id": "abc260_b",
+      "label": "C",
+      "title": "Better Students Are Needed!",
+      "url": "https://atcoder.jp/contests/adt_medium_20241030_2/tasks/abc260_b",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    },
+    {
+      "id": "abc217_b",
+      "label": "D",
+      "title": "AtCoder Quiz",
+      "url": "https://atcoder.jp/contests/adt_medium_20241030_2/tasks/abc217_b",
+      "directory": {
+        "path": "d",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    },
+    {
+      "id": "abc336_c",
+      "label": "E",
+      "title": "Even Digits",
+      "url": "https://atcoder.jp/contests/adt_medium_20241030_2/tasks/abc336_c",
+      "directory": {
+        "path": "e",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    },
+    {
+      "id": "abc292_c",
+      "label": "F",
+      "title": "Four Variables",
+      "url": "https://atcoder.jp/contests/adt_medium_20241030_2/tasks/abc292_c",
+      "directory": {
+        "path": "f",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    },
+    {
+      "id": "abc371_d",
+      "label": "G",
+      "title": "1D Country",
+      "url": "https://atcoder.jp/contests/adt_medium_20241030_2/tasks/abc371_d",
+      "directory": {
+        "path": "g",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    }
+  ]
+}
