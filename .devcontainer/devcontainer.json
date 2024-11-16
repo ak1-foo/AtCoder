@@ -12,9 +12,16 @@
     }],
     "customizations": {
         "vscode": {
+            "settings": {
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true
+                }
+            },
             "extensions": [
                 "editorconfig.editorconfig",
-                "ms-python.python"
+                "ms-python.python",
+                "ms-python.black-formatter"
             ]
         }
     },
