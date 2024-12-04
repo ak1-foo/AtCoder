@@ -1,0 +1,64 @@
+{
+  "contest": {
+    "id": "adt_medium_20241128_3",
+    "title": "AtCoder Daily Training MEDIUM 2024/11/28 20:30start",
+    "url": "https://atcoder.jp/contests/adt_medium_20241128_3"
+  },
+  "tasks": [
+    {
+      "id": "abc332_b",
+      "label": "C",
+      "title": "Glass and Mug",
+      "url": "https://atcoder.jp/contests/adt_medium_20241128_3/tasks/abc332_b",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    },
+    {
+      "id": "abc239_b",
+      "label": "D",
+      "title": "Integer Division",
+      "url": "https://atcoder.jp/contests/adt_medium_20241128_3/tasks/abc239_b",
+      "directory": {
+        "path": "d",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    },
+    {
+      "id": "abc329_c",
+      "label": "E",
+      "title": "Count xxx",
+      "url": "https://atcoder.jp/contests/adt_medium_20241128_3/tasks/abc329_c",
+      "directory": {
+        "path": "e",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    },
+    {
+      "id": "abc371_c",
+      "label": "F",
+      "title": "Make Isomorphic",
+      "url": "https://atcoder.jp/contests/adt_medium_20241128_3/tasks/abc371_c",
+      "directory": {
+        "path": "f",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    },
+    {
+      "id": "abc326_d",
+      "label": "G",
+      "title": "ABC Puzzle",
+      "url": "https://atcoder.jp/contests/adt_medium_20241128_3/tasks/abc326_d",
+      "directory": {
+        "path": "g",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
+    }
+  ]
+}
